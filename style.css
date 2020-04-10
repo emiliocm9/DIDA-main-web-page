@@ -1,56 +1,119 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html {
   font-size: 62.5%;
 }
 
 body {
-  margin: 0;
   font-size: 1.4rem;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Oswald', sans-serif;
+  background-color: #f7fafc;
 }
 
-  /* Navigation Bar Section */
 .nav-bar {
   display: flex;
   width: 90%;
   margin: 0 auto;
-  height: 6rem;
-  border: 1px solid red;
   border-radius: 1rem;
-  align-items: center;
+  height: 8rem;
+  border: 1px solid red;
   justify-content: space-between;
 }
 
-.nav-bar img {
-  width: 15%;
-
-}
-
 .nav__list {
-  border: 1px solid red;
   display: flex;
   align-items: center;
+  width: 50%;
+  border: 1px solid red;
+  justify-content: space-between;
+}
+
+.nav__list img {
+  width: 10%;
+  margin-left: 2rem;
 }
 
 .nav__list-container {
-  display: flex;
-  list-style: none;
-  justify-content: space-around;
+display: flex;
+border: 1px solid red;
 }
 
 .nav__list-container li {
-  margin: 0 1rem;
+  margin: 0 0.5rem;
+  list-style: none;
 }
 
 .nav__list-container li a {
   text-decoration: none;
   text-transform: uppercase;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
+}
+
+.center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ /*  min-height: 100vh; */
+  text-align: center;
+  background: #dde1e7;
+  width: 40%;
+  border: 1px solid red;
+}
+
+.icons{
+  display: flex;
+  margin: 0.5rem 0;
 }
 
 .nav__list-social {
-  display: flex;
-  width: 30%;
-  border: 1px solid red;
-  justify-content: space-around;
+  position: relative;
+  list-style: none;
+  height: 7rem;
+  width: 7rem;
+  margin: 0 1rem;
+  border-radius: 50%;
+  background: #dde1e7;
+  cursor: pointer;
+  box-shadow: -0.3rem -0.3rem 0.7rem #ffffff73,
+              0.3rem 0.3rem 0.5rem rgba(94,104,121,0.288);
+}
+
+.nav__list-social a{
+  line-height: 7rem;
+  font-size: 2.7rem;
+  color: #b6bbc5;
+}
+
+.second .nav__list-social.shadow-2 a{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 5.5rem;
+  width: 5.5rem;
+  line-height: 55px;
+  border-radius: 50%;
+  background: #dde1e7;
+  font-size: 2.4rem;
+  box-shadow: inset -0.3rem -0.3rem 0.7rem #ffffff73,
+              inset 0.3rem 0.3rem 0.5rem rgba(94, 104, 121, 0.288);
+}
+
+.nav__list-social:nth-child(1).fill-color a{
+  color: #4267B2;
+}
+
+.nav__list-social:nth-child(2).fill-color a{
+  color: #1DA1F2;
+}
+
+.nav__list-social:nth-child(3).fill-color a{
+  color: #E1306C;
+}
+
+.nav__list-social:nth-child(4).fill-color a{
+  color: #333;
 }

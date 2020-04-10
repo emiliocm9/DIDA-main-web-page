@@ -8,13 +8,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Judson:wght@700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
   <script src="https://kit.fontawesome.com/b8f781cebc.js" crossorigin="anonymous"></script>
   <title>DIDA</title>
 </head>
 <body>
   <nav class="nav-bar">
     <div class="nav__list">
-    <img src="img/LogoDIDA.png" alt="DIDA Publicidad">
+    <img src="img/logo.png" alt="DIDA Publicidad">
       <ul class="nav__list-container">
         <li class="nav__list-items"><a href="">Inicio</a></li>
         <li class="nav__list-items"><a href="">Servicio</a></li>
@@ -23,13 +24,20 @@
         <li class="nav__list-items"><a href="">Contacto</a></li>
       </ul>
     </div>
-    <div class="nav__list-social">
-      <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
-      <li><a href="#"><span class="fab fa-twitter"></span></a></li>
-      <li><a href="#"><span class="fab fa-instagram"></span></a></li>
-      <li><a href="#"><span class="fab fa-github"></span></a></li>
+    <div class="center">
+      <div class="icons second">
+        <li class="nav__list-social"><a href="#"><span class="fab fa-facebook-f"></span></a></li>
+        <li class="nav__list-social"><a href="#"><span class="fab fa-twitter"></span></a></li>
+        <li class="nav__list-social"><a href="#"><span class="fab fa-instagram"></span></a></li>
+        <li class="nav__list-social"><a href="#"><span class="fab fa-github"></span></a></li>
+      </div>
     </div>
+    <script>
+      $('.second li').click(function(){
+        $(this).toggleClass("shadow-2").siblings();
+        $(this).toggleClass("fill-color").siblings();
+      });
+      </script>
   </nav>
-  
 </body>
 </html>
