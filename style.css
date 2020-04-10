@@ -11,35 +11,35 @@ html {
 body {
   font-size: 1.4rem;
   font-family: 'Oswald', sans-serif;
-  background-color: #f7fafc;
+  background-color: #dde1e7;
 }
 
 .nav-bar {
   display: flex;
   width: 90%;
-  margin: 0 auto;
+  margin: 1rem auto 0;
   border-radius: 1rem;
   height: 8rem;
-  border: 1px solid red;
   justify-content: space-between;
+  background: #dde1e7;
+  box-shadow: -0.3rem -0.3rem 0.7rem #ffffff73,
+              0.3rem 0.3rem 0.5rem rgba(94,104,121,0.288);
 }
 
 .nav__list {
   display: flex;
   align-items: center;
-  width: 50%;
-  border: 1px solid red;
+  width: 60%;
   justify-content: space-between;
 }
 
 .nav__list img {
-  width: 10%;
+  width: 8.5%;
   margin-left: 2rem;
 }
 
 .nav__list-container {
 display: flex;
-border: 1px solid red;
 }
 
 .nav__list-container li {
@@ -50,17 +50,28 @@ border: 1px solid red;
 .nav__list-container li a {
   text-decoration: none;
   text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  color: darkolivegreen;
+  padding: 1rem 1.5rem;
+  box-shadow: -0.3rem -0.3rem 0.7rem #ffffff73,
+              0.3rem 0.3rem 0.5rem rgba(94,104,121,0.288);
+  border-radius: 0.5rem;
+}
+
+.nav__list-container li a:hover {
+  box-shadow: inset -0.3rem -0.3rem 0.7rem #ffffff73, inset 0.3rem 0.3rem 0.5rem rgba(94,104,121,0.288);
+  /* box-shadow: inset -0.7rem -0.7rem 2rem 0 rgba(255, 255, 255,0.7), inset 0.7rem 0.7rem 0.2rem 0 rgba(0, 0, 0, 0.2); */
 }
 
 .center{
   display: flex;
   align-items: center;
   justify-content: center;
- /*  min-height: 100vh; */
   text-align: center;
   background: #dde1e7;
   width: 40%;
-  border: 1px solid red;
+  border-radius: 1rem;
 }
 
 .icons{
@@ -71,8 +82,8 @@ border: 1px solid red;
 .nav__list-social {
   position: relative;
   list-style: none;
-  height: 7rem;
-  width: 7rem;
+  height: 5rem;
+  width: 5rem;
   margin: 0 1rem;
   border-radius: 50%;
   background: #dde1e7;
@@ -82,9 +93,9 @@ border: 1px solid red;
 }
 
 .nav__list-social a{
-  line-height: 7rem;
-  font-size: 2.7rem;
-  color: #b6bbc5;
+  line-height: 5rem;
+  font-size: 2rem;
+  color: black;
 }
 
 .second .nav__list-social.shadow-2 a{
